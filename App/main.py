@@ -1,16 +1,24 @@
-# This is a sample Python script.
+import uvicorn ##ASGI
+from fastapi import FastAPI
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# 2. Create the app object
+app = FastAPI()
+
+# 3. Index route, opens automatically on http://127.0.0.1:8000
+@app.get('/')
+def index():
+    return {'message': 'Hello, Mohamad'}
+
+# 4. Route with a single parameter, returns the parameter within a message
+#    Located at: http://127.0.0.1:8000/AnyNameHere
+@app.get('/Welcome')
+def get_name(name: str):
+    return {'Welcome To my first API app': f'{name}'}
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
-
-# Press the green button in the gutter to run the script.
+# 5. Run the API with uvicorn
+#    Will run on http://127.0.0.1:8000
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    uvicorn.run(app, host='127.0.0.1', port=8000)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
