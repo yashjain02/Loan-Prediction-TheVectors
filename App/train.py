@@ -4,8 +4,7 @@
 # In[6]:
 
 
-import pandas as pd
-from loan_prediction import preprocessing as p
+import preprocessing as p
 
 
 # In[8]:

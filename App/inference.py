@@ -4,7 +4,7 @@
 # In[7]:
 
 
-from loan_prediction import preprocessing as p
+import preprocessing as p
 import joblib
 
 

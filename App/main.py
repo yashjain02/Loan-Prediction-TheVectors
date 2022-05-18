@@ -1,5 +1,11 @@
 import uvicorn ##ASGI
-from fastapi import FastAPI
+from fastapi import FastAPI, File, UploadFile
+import inference, preprocessing, train
+
+
+
+
+
 
 # 2. Create the app object
 app = FastAPI()
@@ -15,10 +21,22 @@ def index():
 def get_name(name: str):
     return {'Welcome To my first API app': f'{name}'}
 
+@app.post("/files/")
+async def create_file(file: bytes = File('default')):
+    return {"file_size": len(file)}
+
+
+@app.post("/uploadfile/")
+async def create_upload_file(file: UploadFile):
+    return {"filename": file.filename}
 
 
 # 5. Run the API with uvicorn
 #    Will run on http://127.0.0.1:8000
 if __name__ == '__main__':
     uvicorn.run(app, host='127.0.0.1', port=8000)
+
+
+
+
 

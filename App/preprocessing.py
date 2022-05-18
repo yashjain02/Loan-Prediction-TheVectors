@@ -38,7 +38,7 @@ def model_preprocessing_train(feature):
 def add_model(feature, target):
     model=KNeighborsClassifier(n_neighbors=5)
     model.fit(feature,target.values.ravel())
-    joblib.dump(model,'../models/model')
+    joblib.dump(model, '../models/model')
 
 
 # In[38]:
@@ -56,7 +56,7 @@ def scale(features):
 def add_scaler(feature):
     scale= StandardScaler()
     scale.fit(feature)
-    joblib.dump(scale,'../models/scaler')
+    joblib.dump(scale, '../models/scaler')
 
 
 # In[40]:
@@ -92,7 +92,7 @@ def encode(categorical_feature):
 def add_encoder(categorical_feature):
     encode=OrdinalEncoder(handle_unknown='use_encoded_value',unknown_value=5)
     encode.fit(categorical_feature)
-    joblib.dump(encode,'../models/encoder')
+    joblib.dump(encode, '../models/encoder')
 
 
 # In[44]:
