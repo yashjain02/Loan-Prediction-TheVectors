@@ -1,1 +1,2 @@
-web: sh setup.sh && uvicorn App.FastAPI:app && streamlit run App/streamlit.py 
+web: uvicorn App.FastAPI:app 
+web: sh setup.sh  && streamlit run App/streamlit.py 
