@@ -1,2 +1,0 @@
-python: cd App && uvicorn FastAPI:app
-python: cd App && streamlit run streamlit.py
