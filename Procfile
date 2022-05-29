@@ -1,1 +1,1 @@
-web: honcho -f ProcfileHoncho start
+worker: sh -c 'cd App uvicorn FastAPI:app && streamlit run streamlit.py'
