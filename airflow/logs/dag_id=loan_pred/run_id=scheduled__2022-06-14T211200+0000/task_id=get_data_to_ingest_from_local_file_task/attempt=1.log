@@ -1,0 +1,30 @@
+[2022-06-15 19:12:35,452] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: loan_pred.get_data_to_ingest_from_local_file_task scheduled__2022-06-14T21:12:00+00:00 [queued]>
+[2022-06-15 19:12:35,477] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: loan_pred.get_data_to_ingest_from_local_file_task scheduled__2022-06-14T21:12:00+00:00 [queued]>
+[2022-06-15 19:12:35,477] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-15 19:12:35,478] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-15 19:12:35,479] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-15 19:12:35,546] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): get_data_to_ingest_from_local_file_task> on 2022-06-14 21:12:00+00:00
+[2022-06-15 19:12:35,552] {standard_task_runner.py:52} INFO - Started process 452 to run task
+[2022-06-15 19:12:35,558] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'loan_pred', 'get_data_to_ingest_from_local_file_task', 'scheduled__2022-06-14T21:12:00+00:00', '--job-id', '1597', '--raw', '--subdir', 'DAGS_FOLDER/loan_pred.py', '--cfg-path', '/tmp/tmpek1fv8eh', '--error-file', '/tmp/tmpwp_qy7yi']
+[2022-06-15 19:12:35,560] {standard_task_runner.py:80} INFO - Job 1597: Subtask get_data_to_ingest_from_local_file_task
+[2022-06-15 19:12:35,693] {task_command.py:370} INFO - Running <TaskInstance: loan_pred.get_data_to_ingest_from_local_file_task scheduled__2022-06-14T21:12:00+00:00 [running]> on host DESKTOP-GDPK8BL.localdomain
+[2022-06-15 19:12:36,110] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=loan_pred
+AIRFLOW_CTX_TASK_ID=get_data_to_ingest_from_local_file_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-14T21:12:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-14T21:12:00+00:00
+[2022-06-15 19:12:36,128] {python.py:173} INFO - Done. Returned value was:       Loan_ID  Gender Married Dependents  ... LoanAmount Loan_Amount_Term  Credit_History  Property_Area
+150  LP001827    Male      No          0  ...      180.0            360.0             1.0          Urban
+236  LP002321  Female      No          0  ...      117.0            360.0             0.0      Semiurban
+82   LP001445    Male     Yes          2  ...      149.0            480.0             0.0          Rural
+142  LP001789    Male     Yes         3+  ...      139.0            360.0             0.0          Urban
+177  LP002009  Female      No          0  ...       65.0            360.0             NaN          Rural
+
+[5 rows x 12 columns]
+[2022-06-15 19:12:36,308] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=loan_pred, task_id=get_data_to_ingest_from_local_file_task, execution_date=20220614T211200, start_date=20220615T171235, end_date=20220615T171236
+[2022-06-15 19:12:36,376] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-15 19:12:36,575] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

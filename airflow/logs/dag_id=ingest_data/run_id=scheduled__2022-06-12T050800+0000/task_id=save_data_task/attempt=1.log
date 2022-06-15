@@ -1,0 +1,23 @@
+[2022-06-12 17:20:58,354] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: ingest_data.save_data_task scheduled__2022-06-12T05:08:00+00:00 [queued]>
+[2022-06-12 17:20:58,390] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: ingest_data.save_data_task scheduled__2022-06-12T05:08:00+00:00 [queued]>
+[2022-06-12 17:20:58,390] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-12 17:20:58,391] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-12 17:20:58,391] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-12 17:20:58,458] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): save_data_task> on 2022-06-12 05:08:00+00:00
+[2022-06-12 17:20:58,465] {standard_task_runner.py:52} INFO - Started process 8339 to run task
+[2022-06-12 17:20:58,471] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'ingest_data', 'save_data_task', 'scheduled__2022-06-12T05:08:00+00:00', '--job-id', '1011', '--raw', '--subdir', 'DAGS_FOLDER/ingestion_dag.py', '--cfg-path', '/tmp/tmpyq787zao', '--error-file', '/tmp/tmpttor8q8i']
+[2022-06-12 17:20:58,473] {standard_task_runner.py:80} INFO - Job 1011: Subtask save_data_task
+[2022-06-12 17:20:58,634] {task_command.py:370} INFO - Running <TaskInstance: ingest_data.save_data_task scheduled__2022-06-12T05:08:00+00:00 [running]> on host DESKTOP-GDPK8BL.localdomain
+[2022-06-12 17:20:59,163] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=ingest_data
+AIRFLOW_CTX_TASK_ID=save_data_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-12T05:08:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-12T05:08:00+00:00
+[2022-06-12 17:20:59,178] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-12 17:20:59,203] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=ingest_data, task_id=save_data_task, execution_date=20220612T050800, start_date=20220612T152058, end_date=20220612T152059
+[2022-06-12 17:20:59,294] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-12 17:20:59,522] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

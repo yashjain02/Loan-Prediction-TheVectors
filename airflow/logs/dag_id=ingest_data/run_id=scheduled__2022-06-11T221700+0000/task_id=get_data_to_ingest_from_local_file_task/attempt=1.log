@@ -1,0 +1,28 @@
+[2022-06-12 16:09:18,799] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: ingest_data.get_data_to_ingest_from_local_file_task scheduled__2022-06-11T22:17:00+00:00 [queued]>
+[2022-06-12 16:09:18,825] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: ingest_data.get_data_to_ingest_from_local_file_task scheduled__2022-06-11T22:17:00+00:00 [queued]>
+[2022-06-12 16:09:18,826] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-12 16:09:18,826] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-12 16:09:18,827] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-12 16:09:18,894] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): get_data_to_ingest_from_local_file_task> on 2022-06-11 22:17:00+00:00
+[2022-06-12 16:09:18,908] {standard_task_runner.py:52} INFO - Started process 2053 to run task
+[2022-06-12 16:09:18,908] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'ingest_data', 'get_data_to_ingest_from_local_file_task', 'scheduled__2022-06-11T22:17:00+00:00', '--job-id', '188', '--raw', '--subdir', 'DAGS_FOLDER/ingestion_dag.py', '--cfg-path', '/tmp/tmpnouukepr', '--error-file', '/tmp/tmppak6vmz9']
+[2022-06-12 16:09:18,912] {standard_task_runner.py:80} INFO - Job 188: Subtask get_data_to_ingest_from_local_file_task
+[2022-06-12 16:09:19,164] {task_command.py:370} INFO - Running <TaskInstance: ingest_data.get_data_to_ingest_from_local_file_task scheduled__2022-06-11T22:17:00+00:00 [running]> on host DESKTOP-GDPK8BL.localdomain
+[2022-06-12 16:09:19,535] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=ingest_data
+AIRFLOW_CTX_TASK_ID=get_data_to_ingest_from_local_file_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-11T22:17:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-11T22:17:00+00:00
+[2022-06-12 16:09:19,601] {python.py:173} INFO - Done. Returned value was:           AT      V       AP     RH      PE
+30845  13.78  45.51  1015.56  69.92  468.17
+24996   9.72  41.44  1015.17  84.41  481.85
+8293   10.22  39.96  1025.05  96.05  471.36
+25322   5.97  40.35  1012.30  94.10  489.03
+7670   29.03  67.79  1010.86  54.03  445.03
+[2022-06-12 16:09:19,704] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=ingest_data, task_id=get_data_to_ingest_from_local_file_task, execution_date=20220611T221700, start_date=20220612T140918, end_date=20220612T140919
+[2022-06-12 16:09:19,771] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-12 16:09:19,981] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
