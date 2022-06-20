@@ -1,7 +1,0 @@
-[2022-06-12 14:46:30,375] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: ingest_data.save_data_task scheduled__2022-06-11T21:13:00+00:00 [queued]>
-[2022-06-12 14:46:30,442] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: ingest_data.save_data_task scheduled__2022-06-11T21:13:00+00:00 [queued]>
-[2022-06-12 14:46:30,452] {taskinstance.py:1356} INFO - 
---------------------------------------------------------------------------------
-[2022-06-12 14:46:30,453] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
-[2022-06-12 14:46:30,454] {taskinstance.py:1358} INFO - 
---------------------------------------------------------------------------------
