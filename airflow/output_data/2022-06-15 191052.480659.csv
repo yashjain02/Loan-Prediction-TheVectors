@@ -1,0 +1,6 @@
+Loan_ID,Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Loan_Amount_Term,Credit_History,Property_Area
+LP002270,Male,Yes,1,Graduate,No,3436,3809,100.0,360.0,1.0,Rural
+LP002485,Male,No,1,Graduate,No,24797,0,240.0,360.0,1.0,Semiurban
+LP002803,Male,Yes,1,Not Graduate,,2600,618,122.0,360.0,1.0,Semiurban
+LP002311,Female,Yes,0,Graduate,No,2157,1788,104.0,360.0,1.0,Urban
+LP001352,Male,Yes,0,Not Graduate,No,4700,0,135.0,360.0,0.0,Semiurban
